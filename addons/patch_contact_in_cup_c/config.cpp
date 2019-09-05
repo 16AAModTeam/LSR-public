@@ -6,8 +6,15 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "LSR_vehicle_building_contact_prep_c",
             "A3_Structures_F_Enoch",
+            "CUP_Worlds",
+            "CUP_Church_01",
+            "CUP_CAStructuresHouse_Church_02",
+            "CUP_CAStructuresHouse_HouseV",
+            "CUP_CAStructuresHouse_HouseV2",
+            "CUP_Buildings2_Config",
+            "CUP_Structures_Config",
+            "CUP_New_Buildings"
         };
         author = "16AA 3LSR";
         authors[] = {"Blanthorn","Dunwall"};
