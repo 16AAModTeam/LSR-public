@@ -6,25 +6,24 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = QUOTE(REQUIRED_VERSION);
-        requiredAddons[] = {"ace_interaction"};
+        requiredAddons[] = {};
         author = ECSTRING(common,LSR);
-        authors[] = {"Glowbal", "ACE Team"};
         authorURL = CSTRING(URL);
-        versionDesc = "LSR AddOns";
+        versionDesc = "16AA public mods";
         VERSION_CONFIG;
     };
 };
 
 class CfgMods {
     class PREFIX {
-        dir = "@16aa";
-        name = "16AA Addons";
+        dir = "@16aa_public";
+        name = "16AA public mods";
         picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
         hidePicture = "true";
         hideName = "true";
         actionName = "Website";
         action = CSTRING(URL);
-        description = "Issue Tracker: TBD GitLab";
+        description = "Issue tracker: https://gitlab.com/16AA/LSR/lsr-public/";
     };
 };
 
