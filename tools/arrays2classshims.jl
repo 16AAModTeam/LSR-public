@@ -7,19 +7,10 @@
 new = eval(Meta.parse(ARGS[1]))
 old = eval(Meta.parse(ARGS[2]))
 
-println("// External base classes")
-for c in Set(new)
-    println("class $c;")
-end
-
-println()
-println("// Replace existing classes")
 for i in 1:length(old)
-    println("class $(old[i]): $(new[i]) {};")
-end
-
-println()
-println("// Lines below this need to go in another add-on which is required by this one")
-for i in 1:length(old)
-    println("delete $(old[i]);")
+    println("""
+class $(old[i]) {
+    init = QUOTE(_p = getPosWorld (_this select 0); _up = vectorUp (_this select 0); _dir = vectorDir (_this select 0); deleteVehicle (_this select 0); _new = '$(new[i])' createVehicle _p; _new setPosWorld _p; _new setVectorUp _up; _new setVectorDir _dir;);
+};
+    """)
 end

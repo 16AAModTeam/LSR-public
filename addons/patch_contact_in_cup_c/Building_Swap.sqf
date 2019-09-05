@@ -1,0 +1,56 @@
+// Don't actually run this
+// Dunwall just gave it to us so we could use his replacement arrays
+// Use ./sqf2classhims.fish instead to generate the classnames to go under CfgVehicles{}
+
+params ["_location","_radius"];
+_debug = false; 
+
+if (!isServer) exitWith {}; //get the fuck out nonservers
+
+///////Parallel Arrays to make shit easier
+_oldBuildingsVillage = ["Land_HouseV_2I","Land_HouseV_2L","Land_HouseV2_02","Land_HouseV2_03B","Land_HouseV2_04_interier","Land_HouseV_1I1","Land_HouseV_3I3","Land_HouseV_3I4","Land_HouseV_1I2","Land_HouseV_1I3","Land_HouseV_1I4","Land_HouseV_1L1","Land_HouseV_1L2","Land_HouseV_1T","Land_HouseV_3I1","Land_HouseV_3I2","Land_houseV_2T1","Land_houseV_2T2","Land_HouseV2_01A","Land_HouseV2_01B"];
+_newBuildingsVillage = ["Land_House_1B01_F","Land_House_2B01_F","Land_House_2B02_F","Land_House_2B03_F","Land_House_2B04_F","Land_House_1W01_F","Land_House_1W10_F","Land_House_1W11_F","Land_House_1W02_F","Land_House_1W03_F","Land_House_1W04_F","Land_House_1W05_F","Land_House_1W06_F","Land_House_1W07_F","Land_House_1W08_F","Land_House_1W09_F","Land_House_2W01_F","Land_House_2W02_F","Land_House_2W03_F","Land_House_2W04_F"];
+
+_oldBuildingsReligious = ["Land_Church_02a", "Land_Church_02", "Land_Church_01"];
+_newBuildingsReligious = ["Land_OrthodoxChurch_02_F", "Land_OrthodoxChurch_02_F", "Land_Church_05_F"];
+
+_oldBuildingsMilitary = ["Land_Mil_Barracks","Land_Mil_Barracks_L","Land_Mil_Barracks_i","Land_Mil_Guardhouse_no_interior_CUP"];
+_newBuildingsMilitary = ["Land_Barracks_03_F","Land_Barracks_02_F","Land_Barracks_04_F","Land_GuardHouse_02_F"];
+
+_oldBuildingsOther = [/*"Land_Misc_PowerStation","Land_Shed_wooden","Land_Shed_W4","Land_Shed_W02","Land_Shed_W01"*/];
+_newBuildingsOther = [/*"Land_PowerStation_01_F","Land_Shed_13_F","Land_Shed_14_F","Land_Shed_10_F","Land_Shed_09_F"*/]; //REMOVED UNTIL OFFSET PARAMETERS CODED
+
+_oldBuildings = _oldBuildingsVillage + _oldBuildingsReligious + _oldBuildingsMilitary + _oldBuildingsOther;
+_newBuildings = _newBuildingsVillage + _newBuildingsReligious + _newBuildingsMilitary + _newBuildingsOther;
+
+
+///////Grab all buildings within radius
+_mapObjects = _location nearObjects ["BUILDING", _radius];
+
+if (_debug) then
+{
+	_objClassnames = [];
+	{
+		_objClassnames = _objClassnames + [typeOf _x];
+	} forEach _mapObjects;
+	hint format ["%1", _objClassnames];
+};
+
+{
+	_obj = typeOf _x;
+	_index = _oldBuildings find _obj;
+	
+	if (_index > -1) then
+	{
+		//if Object found replace object
+		_pos = getPosWorld _x;
+		_dir = getDir _x;
+		_pitchBank = _x call BIS_fnc_getPitchBank;
+		_x hideObjectGlobal true;
+
+		_new = (_newBuildings select _index) createVehicle _pos;
+		_new setPosWorld _pos;
+		_new setDir _dir;
+		[_new, _pitchBank select 0, _pitchBank select 1] call BIS_fnc_setPitchBank;
+	};
+} forEach _mapObjects;
