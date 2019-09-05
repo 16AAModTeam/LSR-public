@@ -1,0 +1,12 @@
+name = "16AA public mods";
+picture = "logo_16AA_ca.paa";
+actionName = "Homepage";
+action = "https://16aa.net/";
+description = "16AA public mods";
+logo = "logo_16AA_ca.paa";
+logoOver = "logo_16AA_ca.paa";
+tooltip = "";
+tooltipOwned = "";
+overview = "";
+author = "3LSR";
+overviewPicture = "logo_16AA_ca.paa";

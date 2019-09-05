@@ -1,0 +1,9 @@
+name = "16AA public mods"
+prefix = "LSR"
+author = "16AA 3LSR"
+version = "0.0.0"
+files = ["mod.cpp"]
+sigversion = 3
+reuse_private_key = false
+include = ["./include"]
+exclude = [".swp"]
