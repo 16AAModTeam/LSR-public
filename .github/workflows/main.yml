@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build addon with HEMTT
-      uses: arma-actions/hemtt
+      uses: arma-actions/hemtt@master
