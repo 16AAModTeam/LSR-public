@@ -4,8 +4,9 @@ on:
       - master
 
 jobs:
-  hello_world_job:
+  build_addon:
     runs-on: ubuntu-latest
     steps:
-    - name: Build addon with HEMTT
-      uses: arma-actions/hemtt@master
+      - uses: actions/checkout@v1
+      - name: Build addon with HEMTT
+        uses: arma-actions/hemtt@master
