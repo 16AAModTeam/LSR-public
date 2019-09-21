@@ -15,6 +15,14 @@ for i in 1:length(old)
     push!(baseclasses, b)
 end
 
+models = Dict()
+for n in new
+    shortname = split(n,'_')[2:end] |> x -> join(x,'_')
+    r = Regex("model =.*$(shortname).*")
+    b = filter(x->occursin(r,x),aio)[1]
+    models[n] = b
+end
+
 for b in baseclasses
     println("class $b;")
 end
@@ -22,10 +30,10 @@ end
 for i in 1:length(old)
     # yes, this is lazy
     r = Regex("class $(old[i])[:]")
-    baseclass = filter(x->occursin(r,x),aio)[1] |> x -> split(x,':')[end] # Doesn't deal with " : " but these don't exist in AiO
+    baseclass = filter(x->occursin(r,x),aio)[1] |> x -> split(x,':')[end]
     println("""
-class $(old[i]): $baseclass {
-    init = QUOTE(_p = getPosWorld (_this select 0); _up = vectorUp (_this select 0); _dir = vectorDir (_this select 0); deleteVehicle (_this select 0); _new = '$(new[i])' createVehicle _p; _new setPosWorld _p; _new setVectorUp _up; _new setVectorDir _dir;);
-};
+        class $(old[i]): $baseclass {
+            $(models[new[i]])
+        };
     """)
 end
