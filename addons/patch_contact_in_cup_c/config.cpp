@@ -7,6 +7,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "A3_Structures_F_Enoch",
+            "CABuildings", /* CUP core or any CUP-equivalent addon */
         };
         author = "16AA 3LSR";
         authors[] = {"Blanthorn","Dunwall"};
