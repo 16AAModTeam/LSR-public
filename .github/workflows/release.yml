@@ -1,0 +1,24 @@
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build_addon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+      - name: Build addon with HEMTT
+        uses: arma-actions/hemtt@master
+        with:
+          command: 'build --release'
+      - run: |
+          cp -r 'releases/0.0.0/@LSR' '@16aa_public'
+          zip -r @16aa_public.zip @16aa_public/
+      - uses: softprops/action-gh-release@v1
+        with:
+          files: '@16aa_public.zip'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
