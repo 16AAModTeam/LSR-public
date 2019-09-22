@@ -14,7 +14,7 @@ jobs:
         uses: arma-actions/hemtt@master
         with:
           command: 'build --release'
-      - run: "cp 'releases/0.0.0/@LSR' 'releases/0.0.0/@16aa_public'"
+      - run: "cp -r 'releases/0.0.0/@LSR' 'releases/0.0.0/@16aa_public'"
       - uses: actions/upload-artifact@master
         with:
           name: '@16aa_public'
