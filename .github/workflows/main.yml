@@ -14,8 +14,17 @@ jobs:
         uses: arma-actions/hemtt@master
         with:
           command: 'build --release'
-      - run: "cp -r 'releases/0.0.0/@LSR' '@16aa_public'"
+          - run: |
+            "cp -r 'releases/0.0.0/@LSR' '@16aa_public'"
+            "zip -r @16aa_public.zip @16aa_public/"
       - uses: actions/upload-artifact@master
         with:
           name: '@16aa_public'
-          path: '@16aa_public'
+          path: '@16aa_public.zip'
+      - uses: softprops/action-gh-release@v1
+        # only run on tagged releases
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: '@16aa_public.zip'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
