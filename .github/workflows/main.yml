@@ -12,10 +12,7 @@ jobs:
         uses: arma-actions/hemtt@master
         with:
           command: 'build --release'
-      - run: 'ls'
-      - run: 'ls releases'
-      - run: 'ls releases/0.0.0'
-      # - run: 'mv releases/0.0.0/@LSR releases/0.0.0/@16aa_public'
+      - run: "mv 'releases/0.0.0/@LSR' 'releases/0.0.0/@16aa_public'"
       - uses: actions/upload-artifact@master
         with:
           name: '@16aa_public'
