@@ -8,13 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
       - name: Build addon with HEMTT
         uses: arma-actions/hemtt@master
         with:
           command: 'build --release'
-      - run: 'mv releases/0.0.0/@LSR releases/0.0.0/@16aa_public'
+      - run: "cp -r 'releases/0.0.0/@LSR' 'releases/0.0.0/@16aa_public'"
       - uses: softprops/action-gh-release@v1
         with:
-          files: 'releases/0.0.0'
+          files: 'releases/0.0.0/@16aa_public'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
