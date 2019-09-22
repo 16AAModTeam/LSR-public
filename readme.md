@@ -12,7 +12,7 @@ We try to make everything as modular as possible. If you don't want a PBO, just 
 
 # Installing
 
-Head over to https://github.com/16AAModTeam/LSR-public/releases and download the latest release. Run @16aa_public/ as any other ArmA modification.
+Head over to https://github.com/16AAModTeam/LSR-public/releases and download the latest "@16aa_public.zip" from under "Assets". Extract and run @16aa_public/ as any other ArmA modification.
 
 Requirements: CUP.
 
