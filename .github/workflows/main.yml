@@ -20,7 +20,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: '@16aa_public'
-          path: '@16aa_public.zip'
+          path: '@16aa_public'
       - uses: softprops/action-gh-release@v1
         # only run on tagged releases
         if: startsWith(github.ref, 'refs/tags/')
