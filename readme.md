@@ -8,18 +8,26 @@ We try to make everything as modular as possible. If you don't want a PBO, just 
 
 # What does it do?
 
-- Replace CUP buildings with their equivalents from the Livonia terrain - i.e. more buildings with interiors on Chernarus, etc.
+- Replace CUP buildings with their equivalents from the Livonia terrain - i.e. more buildings with interiors on Chernarus, etc. We've tried to do it tastefully as you can see in the screenshots below.
+
+Before (approx two buildings with interiors):
+
+![Before](https://i.imgur.com/Ocl7xEt.jpg)
+
+After (approx thirty buildings with interiors): 
+
+![After](https://i.imgur.com/Ur5eAfW.jpg)
 
 # Installing
 
-Head over to https://github.com/16AAModTeam/LSR-public/releases and download the latest "@16aa_public.zip" from under "Assets". Extract and run @16aa_public/ as any other ArmA modification.
+[Download the latest release here](https://github.com/16AAModTeam/LSR-public/releases/download/latest/@16aa_public.zip). Extract and run @16aa_public/ as you would any other ArmA modification.
 
 Requirements: CUP.
 
 
-# Building
+# Building (developers only)
 
-1. Install [hemtt](https://github.com/synixebrett/HEMTT/releases) on your PATH (if you're unsure, you probably want ...x86_65-pc-windows-msvc).
+1. Install [hemtt](https://github.com/synixebrett/HEMTT/releases) on your PATH (if you're unsure, you probably want ...x86_65-pc-windows-msvc). If putting it on your PATH sounds complicated, just put it in the same directory as this repository.
 2. Clone this repository
 3. Run `hemtt build`
 4. Add this folder as a mod to ArmA 3 as you would normally.
