@@ -6,6 +6,12 @@ We have a large number of private mods we run for ourselves. We'd like to make a
 
 We try to make everything as modular as possible. If you don't want a PBO, just delete it.
 
+# Installing
+
+[Download the latest release here](https://github.com/16AAModTeam/LSR-public/releases/download/latest/@16aa_public.zip). Extract and run @16aa_public/ as you would any other ArmA modification.
+
+Requirements: CUP.
+
 # What does it do?
 
 - Replace CUP buildings with their equivalents from the Livonia terrain - i.e. more buildings with interiors on Chernarus, etc. We've tried to do it tastefully as you can see in the screenshots below.
@@ -17,13 +23,6 @@ Before (approx two buildings with interiors):
 After (approx thirty buildings with interiors): 
 
 ![After](https://i.imgur.com/Ur5eAfW.jpg)
-
-# Installing
-
-[Download the latest release here](https://github.com/16AAModTeam/LSR-public/releases/download/latest/@16aa_public.zip). Extract and run @16aa_public/ as you would any other ArmA modification.
-
-Requirements: CUP.
-
 
 # Building (developers only)
 
