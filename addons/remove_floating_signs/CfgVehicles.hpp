@@ -9,18 +9,18 @@ class CfgVehicles {
     class Land_Company3_2;
     class Land_SignB_Gov: Land_Company3_2 {
         scope = 1;
-        delete model;
+        model = "";
     };
     class Land_SignB_GovSign: Land_Company3_2 {
         scope = 1;
-        delete model;
+        model = "";
     };
     class Land_SignB_Pub_CZ2: Land_Company3_2 {
         scope = 1;
-        delete model;
+        model = "";
     };
     class Land_SignB_Pub_RU1: Land_Company3_2 {
         scope = 1;
-        delete model;
+        model = "";
     };
 };
