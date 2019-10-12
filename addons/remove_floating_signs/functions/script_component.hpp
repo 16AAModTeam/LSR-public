@@ -1,0 +1,1 @@
+#include "\z\LSR\addons\remove_floating_signs\script_component.hpp"
