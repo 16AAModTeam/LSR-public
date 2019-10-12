@@ -29400,4 +29400,1922 @@ class CfgVehicles {
         actionBegin4 = "OpenDoor_4";
         actionEnd4 = "OpenDoor_4";
     };
+    class Land_Mil_Guardhouse:  House {
+        author = "Bohemia Interactive";
+        mapSize = 12.47;
+        class SimpleObject
+        {
+            eden = 0;
+            animate[] = {{"door_1_rot", 0}, {"door_1_handle_rot_1", 0}, {"door_1_handle_rot_2", 0}, {"door_1_locked_rot", 0}, {"door_1_handle_locked_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot_1", 0}, {"door_2_handle_rot_2", 0}, {"door_2_locked_rot", 0}, {"door_2_handle_locked_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot_1", 0}, {"door_3_handle_rot_2", 0}, {"door_3_locked_rot", 0}, {"door_3_handle_locked_rot", 0}, {"glass_1_hide", 0}, {"glass_1_unhide", 0}, {"glass_2_hide", 0}, {"glass_2_unhide", 0}, {"glass_3_hide", 0}, {"glass_3_unhide", 0}, {"glass_4_hide", 0}, {"glass_4_unhide", 0}, {"glass_5_hide", 0}, {"glass_5_unhide", 0}};
+            hide[] = {};
+            verticalOffset = 1.905;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        editorPreview = "\A3\EditorPreviews_F_Enoch\Data\CfgVehicles\Land_GuardHouse_02_F.jpg";
+        _generalMacro = "Land_GuardHouse_02_F";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Guard House";
+        model = "\A3\Structures_F_Enoch\Military\Barracks\GuardHouse_02_F.p3d";
+        DLC = "Enoch";
+        icon = "iconObject_3x2";
+        editorCategory = "EdCat_Structures_Enoch";
+        editorSubcategory = "EdSubcat_Military";
+        vehicleClass = "Structures_Military";
+        armor = 1000;
+        explosionShielding = 5;
+        cost = 50000;
+        numberOfDoors = 3;
+        numberOfWindows = 5;
+        selectionDamage = "DamT_1";
+        class DestructionEffects: DestructionEffects
+        {
+            class Ruin1
+            {
+                simulation = "ruin";
+                type = "\A3\Structures_F_Enoch\Military\Barracks\GuardHouse_02_ruins_F.p3d";
+                position = "";
+                intensity = 1;
+                interval = 1;
+                lifeTime = 1;
+            };
+        };
+        class HitPoints
+        {
+            class Glass_1_hitpoint
+            {
+                armor = 0.001;
+                material = -1;
+                name = "Glass_1";
+                visual = "Glass_1_hide";
+                passThrough = 0;
+                radius = 0.4;
+                convexComponent = "Glass_1_hide";
+                class DestructionEffects
+                {
+                    class BrokenGlass1
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass1S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                };
+            };
+            class Glass_2_hitpoint
+            {
+                armor = 0.001;
+                material = -1;
+                name = "Glass_2";
+                visual = "Glass_2_hide";
+                passThrough = 0;
+                radius = 0.4;
+                convexComponent = "Glass_2_hide";
+                class DestructionEffects
+                {
+                    class BrokenGlass1
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass1S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                };
+            };
+            class Glass_3_hitpoint
+            {
+                armor = 0.001;
+                material = -1;
+                name = "Glass_3";
+                visual = "Glass_3_hide";
+                passThrough = 0;
+                radius = 0.4;
+                convexComponent = "Glass_3_hide";
+                class DestructionEffects
+                {
+                    class BrokenGlass1
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass1S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                };
+            };
+            class Glass_4_hitpoint
+            {
+                armor = 0.001;
+                material = -1;
+                name = "Glass_4";
+                visual = "Glass_4_hide";
+                passThrough = 0;
+                radius = 0.4;
+                convexComponent = "Glass_4_hide";
+                class DestructionEffects
+                {
+                    class BrokenGlass1
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass1S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                };
+            };
+            class Glass_5_hitpoint
+            {
+                armor = 0.001;
+                material = -1;
+                name = "Glass_5";
+                visual = "Glass_5_hide";
+                passThrough = 0;
+                radius = 0.4;
+                convexComponent = "Glass_5_hide";
+                class DestructionEffects
+                {
+                    class BrokenGlass1
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass1S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                };
+            };
+        };
+        class Damage
+        {
+            tex[] = {"a3\structures_f_enoch\data\alpha\glass_int_new_ca.paa", "A3\Structures_F_Enoch\data\Alpha\destruct_half_glass_int_new_ca.paa"};
+            mat[] = {"A3\Structures_F_Enoch\Military\Barracks\Data\mil_guardhouse_i_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_i_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_i_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\mil_guardhouse_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\mil_guardhouse_stair.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_stair.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_stair.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\mil_guardhouse_tile.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_tile.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_tile.rvmat"};
+        };
+        class AnimationSources
+        {
+            class Door_1_sound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+                sound = "GenericDoorsSound";
+                soundPosition = "Door_1_trigger";
+            };
+            class Door_1_noSound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+            };
+            class Door_1_locked_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 0.8;
+            };
+            class Door_2_sound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+                sound = "GenericDoorsSound";
+                soundPosition = "Door_2_trigger";
+            };
+            class Door_2_noSound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+            };
+            class Door_2_locked_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 0.8;
+            };
+            class Door_3_sound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+                sound = "GenericDoorsSound";
+                soundPosition = "Door_3_trigger";
+            };
+            class Door_3_noSound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+            };
+            class Door_3_locked_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 0.8;
+            };
+            class Glass_1_source
+            {
+                source = "Hit";
+                hitpoint = "Glass_1_hitpoint";
+                raw = 1;
+            };
+            class Glass_2_source
+            {
+                source = "Hit";
+                hitpoint = "Glass_2_hitpoint";
+                raw = 1;
+            };
+            class Glass_3_source
+            {
+                source = "Hit";
+                hitpoint = "Glass_3_hitpoint";
+                raw = 1;
+            };
+            class Glass_4_source
+            {
+                source = "Hit";
+                hitpoint = "Glass_4_hitpoint";
+                raw = 1;
+            };
+            class Glass_5_source
+            {
+                source = "Hit";
+                hitpoint = "Glass_5_hitpoint";
+                raw = 1;
+            };
+        };
+        class UserActions
+        {
+            class OpenDoor_1
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Open door";
+                position = "Door_1_trigger";
+                priority = 11;
+                actionNamedSel = "Door_1_action";
+                radius = 1.75;
+                aiMaxRange = 5.25;
+                onlyForPlayer = 0;
+                condition = "((this animationSourcePhase 'Door_1_sound_source') < 0.5) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 1, 1] call BIS_fnc_Door)";
+            };
+            class CloseDoor_1: OpenDoor_1
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Close door";
+                priority = 11;
+                condition = "((this animationSourcePhase 'Door_1_sound_source') >= 0.5) && ((this getVariable ['bis_disabled_Door_1', 0]) != 1) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 1, 0] call BIS_fnc_Door)";
+            };
+            class OpenDoor_2
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Open door";
+                position = "Door_2_trigger";
+                priority = 11;
+                actionNamedSel = "Door_2_action";
+                radius = 1.75;
+                aiMaxRange = 5.25;
+                onlyForPlayer = 0;
+                condition = "((this animationSourcePhase 'Door_2_sound_source') < 0.5) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 2, 1] call BIS_fnc_Door)";
+            };
+            class CloseDoor_2: OpenDoor_2
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Close door";
+                priority = 11;
+                condition = "((this animationSourcePhase 'Door_2_sound_source') >= 0.5) && ((this getVariable ['bis_disabled_Door_2', 0]) != 1) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 2, 0] call BIS_fnc_Door)";
+            };
+            class OpenDoor_3
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Open door";
+                position = "Door_3_trigger";
+                priority = 11;
+                actionNamedSel = "Door_3_action";
+                radius = 1.75;
+                aiMaxRange = 5.25;
+                onlyForPlayer = 0;
+                condition = "((this animationSourcePhase 'Door_3_sound_source') < 0.5) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 3, 1] call BIS_fnc_Door)";
+            };
+            class CloseDoor_3: OpenDoor_3
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Close door";
+                priority = 11;
+                condition = "((this animationSourcePhase 'Door_3_sound_source') >= 0.5) && ((this getVariable ['bis_disabled_Door_3', 0]) != 1) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 3, 0] call BIS_fnc_Door)";
+            };
+        };
+        actionBegin1 = "OpenDoor_1";
+        actionEnd1 = "OpenDoor_1";
+        actionBegin2 = "OpenDoor_2";
+        actionEnd2 = "OpenDoor_2";
+        actionBegin3 = "OpenDoor_3";
+        actionEnd3 = "OpenDoor_3";
+    };
+    class Land_Mil_Guardhouse_no_interior_CUP:  House {
+        author = "Bohemia Interactive";
+        mapSize = 12.47;
+        class SimpleObject
+        {
+            eden = 0;
+            animate[] = {{"door_1_rot", 0}, {"door_1_handle_rot_1", 0}, {"door_1_handle_rot_2", 0}, {"door_1_locked_rot", 0}, {"door_1_handle_locked_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot_1", 0}, {"door_2_handle_rot_2", 0}, {"door_2_locked_rot", 0}, {"door_2_handle_locked_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot_1", 0}, {"door_3_handle_rot_2", 0}, {"door_3_locked_rot", 0}, {"door_3_handle_locked_rot", 0}, {"glass_1_hide", 0}, {"glass_1_unhide", 0}, {"glass_2_hide", 0}, {"glass_2_unhide", 0}, {"glass_3_hide", 0}, {"glass_3_unhide", 0}, {"glass_4_hide", 0}, {"glass_4_unhide", 0}, {"glass_5_hide", 0}, {"glass_5_unhide", 0}};
+            hide[] = {};
+            verticalOffset = 1.905;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        editorPreview = "\A3\EditorPreviews_F_Enoch\Data\CfgVehicles\Land_GuardHouse_02_F.jpg";
+        _generalMacro = "Land_GuardHouse_02_F";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Guard House";
+        model = "\A3\Structures_F_Enoch\Military\Barracks\GuardHouse_02_F.p3d";
+        DLC = "Enoch";
+        icon = "iconObject_3x2";
+        editorCategory = "EdCat_Structures_Enoch";
+        editorSubcategory = "EdSubcat_Military";
+        vehicleClass = "Structures_Military";
+        armor = 1000;
+        explosionShielding = 5;
+        cost = 50000;
+        numberOfDoors = 3;
+        numberOfWindows = 5;
+        selectionDamage = "DamT_1";
+        class DestructionEffects: DestructionEffects
+        {
+            class Ruin1
+            {
+                simulation = "ruin";
+                type = "\A3\Structures_F_Enoch\Military\Barracks\GuardHouse_02_ruins_F.p3d";
+                position = "";
+                intensity = 1;
+                interval = 1;
+                lifeTime = 1;
+            };
+        };
+        class HitPoints
+        {
+            class Glass_1_hitpoint
+            {
+                armor = 0.001;
+                material = -1;
+                name = "Glass_1";
+                visual = "Glass_1_hide";
+                passThrough = 0;
+                radius = 0.4;
+                convexComponent = "Glass_1_hide";
+                class DestructionEffects
+                {
+                    class BrokenGlass1
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7N_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass1S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7S_0900_0950";
+                        position = "Glass_1_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                };
+            };
+            class Glass_2_hitpoint
+            {
+                armor = 0.001;
+                material = -1;
+                name = "Glass_2";
+                visual = "Glass_2_hide";
+                passThrough = 0;
+                radius = 0.4;
+                convexComponent = "Glass_2_hide";
+                class DestructionEffects
+                {
+                    class BrokenGlass1
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7N_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass1S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7S_0900_0950";
+                        position = "Glass_2_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                };
+            };
+            class Glass_3_hitpoint
+            {
+                armor = 0.001;
+                material = -1;
+                name = "Glass_3";
+                visual = "Glass_3_hide";
+                passThrough = 0;
+                radius = 0.4;
+                convexComponent = "Glass_3_hide";
+                class DestructionEffects
+                {
+                    class BrokenGlass1
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7N_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass1S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7S_0900_0950";
+                        position = "Glass_3_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                };
+            };
+            class Glass_4_hitpoint
+            {
+                armor = 0.001;
+                material = -1;
+                name = "Glass_4";
+                visual = "Glass_4_hide";
+                passThrough = 0;
+                radius = 0.4;
+                convexComponent = "Glass_4_hide";
+                class DestructionEffects
+                {
+                    class BrokenGlass1
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7N_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass1S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7S_0900_0950";
+                        position = "Glass_4_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                };
+            };
+            class Glass_5_hitpoint
+            {
+                armor = 0.001;
+                material = -1;
+                name = "Glass_5";
+                visual = "Glass_5_hide";
+                passThrough = 0;
+                radius = 0.4;
+                convexComponent = "Glass_5_hide";
+                class DestructionEffects
+                {
+                    class BrokenGlass1
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7N_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass1S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass1S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass2S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass2S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass3S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass3S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass4S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass4S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass5S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass5S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass6S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass6S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                    class BrokenGlass7S
+                    {
+                        simulation = "particles";
+                        type = "BrokenGlass7S_0900_0950";
+                        position = "Glass_5_effects";
+                        intensity = 0.15;
+                        interval = 1;
+                        lifeTime = 0.05;
+                    };
+                };
+            };
+        };
+        class Damage
+        {
+            tex[] = {"a3\structures_f_enoch\data\alpha\glass_int_new_ca.paa", "A3\Structures_F_Enoch\data\Alpha\destruct_half_glass_int_new_ca.paa"};
+            mat[] = {"A3\Structures_F_Enoch\Military\Barracks\Data\mil_guardhouse_i_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_i_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_i_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\mil_guardhouse_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_multi.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\mil_guardhouse_stair.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_stair.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_stair.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\mil_guardhouse_tile.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_tile.rvmat", "A3\Structures_F_Enoch\Military\Barracks\Data\destruct_mil_guardhouse_tile.rvmat"};
+        };
+        class AnimationSources
+        {
+            class Door_1_sound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+                sound = "GenericDoorsSound";
+                soundPosition = "Door_1_trigger";
+            };
+            class Door_1_noSound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+            };
+            class Door_1_locked_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 0.8;
+            };
+            class Door_2_sound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+                sound = "GenericDoorsSound";
+                soundPosition = "Door_2_trigger";
+            };
+            class Door_2_noSound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+            };
+            class Door_2_locked_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 0.8;
+            };
+            class Door_3_sound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+                sound = "GenericDoorsSound";
+                soundPosition = "Door_3_trigger";
+            };
+            class Door_3_noSound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+            };
+            class Door_3_locked_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 0.8;
+            };
+            class Glass_1_source
+            {
+                source = "Hit";
+                hitpoint = "Glass_1_hitpoint";
+                raw = 1;
+            };
+            class Glass_2_source
+            {
+                source = "Hit";
+                hitpoint = "Glass_2_hitpoint";
+                raw = 1;
+            };
+            class Glass_3_source
+            {
+                source = "Hit";
+                hitpoint = "Glass_3_hitpoint";
+                raw = 1;
+            };
+            class Glass_4_source
+            {
+                source = "Hit";
+                hitpoint = "Glass_4_hitpoint";
+                raw = 1;
+            };
+            class Glass_5_source
+            {
+                source = "Hit";
+                hitpoint = "Glass_5_hitpoint";
+                raw = 1;
+            };
+        };
+        class UserActions
+        {
+            class OpenDoor_1
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Open door";
+                position = "Door_1_trigger";
+                priority = 11;
+                actionNamedSel = "Door_1_action";
+                radius = 1.75;
+                aiMaxRange = 5.25;
+                onlyForPlayer = 0;
+                condition = "((this animationSourcePhase 'Door_1_sound_source') < 0.5) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 1, 1] call BIS_fnc_Door)";
+            };
+            class CloseDoor_1: OpenDoor_1
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Close door";
+                priority = 11;
+                condition = "((this animationSourcePhase 'Door_1_sound_source') >= 0.5) && ((this getVariable ['bis_disabled_Door_1', 0]) != 1) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 1, 0] call BIS_fnc_Door)";
+            };
+            class OpenDoor_2
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Open door";
+                position = "Door_2_trigger";
+                priority = 11;
+                actionNamedSel = "Door_2_action";
+                radius = 1.75;
+                aiMaxRange = 5.25;
+                onlyForPlayer = 0;
+                condition = "((this animationSourcePhase 'Door_2_sound_source') < 0.5) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 2, 1] call BIS_fnc_Door)";
+            };
+            class CloseDoor_2: OpenDoor_2
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Close door";
+                priority = 11;
+                condition = "((this animationSourcePhase 'Door_2_sound_source') >= 0.5) && ((this getVariable ['bis_disabled_Door_2', 0]) != 1) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 2, 0] call BIS_fnc_Door)";
+            };
+            class OpenDoor_3
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Open door";
+                position = "Door_3_trigger";
+                priority = 11;
+                actionNamedSel = "Door_3_action";
+                radius = 1.75;
+                aiMaxRange = 5.25;
+                onlyForPlayer = 0;
+                condition = "((this animationSourcePhase 'Door_3_sound_source') < 0.5) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 3, 1] call BIS_fnc_Door)";
+            };
+            class CloseDoor_3: OpenDoor_3
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Close door";
+                priority = 11;
+                condition = "((this animationSourcePhase 'Door_3_sound_source') >= 0.5) && ((this getVariable ['bis_disabled_Door_3', 0]) != 1) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 3, 0] call BIS_fnc_Door)";
+            };
+        };
+        actionBegin1 = "OpenDoor_1";
+        actionEnd1 = "OpenDoor_1";
+        actionBegin2 = "OpenDoor_2";
+        actionEnd2 = "OpenDoor_2";
+        actionBegin3 = "OpenDoor_3";
+        actionEnd3 = "OpenDoor_3";
+    };
+    class Land_Misc_WaterStation:  House {
+        author = "Bohemia Interactive";
+        mapSize = 12.32;
+        class SimpleObject
+        {
+            eden = 0;
+            animate[] = {{"door_1_rot", 0}, {"door_1_handle_rot_1", 0}, {"door_1_handle_rot_2", 0}, {"door_1_locked_rot", 0}, {"door_1_handle_locked_rot", 0}};
+            hide[] = {};
+            verticalOffset = 1.116;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        editorPreview = "\A3\EditorPreviews_F_Enoch\Data\CfgVehicles\Land_WaterStation_01_F.jpg";
+        _generalMacro = "Land_WaterStation_01_F";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Water Station";
+        model = "\A3\Structures_F_Enoch\Industrial\Houses\WaterStation_01_F.p3d";
+        DLC = "Enoch";
+        icon = "iconObject_2x1";
+        editorCategory = "EdCat_Structures_Enoch";
+        editorSubcategory = "EdSubcat_Utilities";
+        vehicleClass = "Structures_Village";
+        armor = 4000;
+        explosionShielding = 65;
+        numberOfDoors = 1;
+        numberOfWindows = 0;
+        selectionDamage = "DamT_1";
+        class DestructionEffects: DestructionEffects
+        {
+            class Ruin1
+            {
+                simulation = "ruin";
+                type = "\A3\Structures_F_Enoch\Industrial\Houses\WaterStation_01_ruins_F.p3d";
+                position = "";
+                intensity = 1;
+                interval = 1;
+                lifeTime = 1;
+            };
+        };
+        class HitPoints
+        {
+        };
+        class Damage
+        {
+            tex[] = {};
+            mat[] = {"A3\Structures_F_Enoch\Industrial\Houses\Data\waterstation_multi.rvmat", "A3\Structures_F_Enoch\Industrial\Houses\Data\destruct_waterstation_multi.rvmat", "A3\Structures_F_Enoch\Industrial\Houses\Data\destruct_waterstation_multi.rvmat", "A3\Structures_F_Enoch\Industrial\Houses\Data\waterstation_i_multi.rvmat", "A3\Structures_F_Enoch\Industrial\Houses\Data\destruct_waterstation_i_multi.rvmat", "A3\Structures_F_Enoch\Industrial\Houses\Data\destruct_waterstation_i_multi.rvmat"};
+        };
+        class AnimationSources
+        {
+            class Door_1_sound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+                sound = "GenericDoorsSound";
+                soundPosition = "Door_1_trigger";
+            };
+            class Door_1_noSound_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 1;
+            };
+            class Door_1_locked_source
+            {
+                source = "user";
+                initPhase = 0;
+                animPeriod = 0.8;
+            };
+        };
+        class UserActions
+        {
+            class OpenDoor_1
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Open door";
+                position = "Door_1_trigger";
+                priority = 11;
+                actionNamedSel = "Door_1_action";
+                radius = 1.75;
+                aiMaxRange = 5.25;
+                onlyForPlayer = 0;
+                condition = "((this animationSourcePhase 'Door_1_sound_source') < 0.5) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 1, 1] call BIS_fnc_Door)";
+            };
+            class CloseDoor_1: OpenDoor_1
+            {
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                displayName = "Close door";
+                priority = 11;
+                condition = "((this animationSourcePhase 'Door_1_sound_source') >= 0.5) && ((this getVariable ['bis_disabled_Door_1', 0]) != 1) && (cameraOn isKindOf 'CAManBase')";
+                statement = "([this, 1, 0] call BIS_fnc_Door)";
+            };
+        };
+        actionBegin1 = "OpenDoor_1";
+        actionEnd1 = "OpenDoor_1";
+    };
 };

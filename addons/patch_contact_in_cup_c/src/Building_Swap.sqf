@@ -14,11 +14,14 @@ _newBuildingsVillage = ["Land_House_1B01_F","Land_House_2B01_F","Land_House_2B02
 _oldBuildingsReligious = ["Land_Church_02a", "Land_Church_02", "Land_Church_01"];
 _newBuildingsReligious = ["Land_OrthodoxChurch_02_F", "Land_OrthodoxChurch_02_F", "Land_Church_05_F"];
 
-_oldBuildingsMilitary = ["Land_Mil_Barracks","Land_Mil_Barracks_L","Land_Mil_Barracks_i","Land_Mil_Guardhouse_no_interior_CUP"];
-_newBuildingsMilitary = ["Land_Barracks_03_F","Land_Barracks_02_F","Land_Barracks_04_F","Land_GuardHouse_02_F"];
+_oldBuildingsMilitary = ["Land_Mil_Guardhouse","Land_Mil_Guardhouse_no_interior_CUP"];
+_newBuildingsMilitary = ["Land_GuardHouse_02_F","Land_GuardHouse_02_F"];
 
-_oldBuildingsOther = [/*"Land_Misc_PowerStation","Land_Shed_wooden","Land_Shed_W4","Land_Shed_W02","Land_Shed_W01"*/];
-_newBuildingsOther = [/*"Land_PowerStation_01_F","Land_Shed_13_F","Land_Shed_14_F","Land_Shed_10_F","Land_Shed_09_F"*/]; //REMOVED UNTIL OFFSET PARAMETERS CODED
+_oldBuildingsOther = ["Land_Misc_WaterStation"];
+_newBuildingsOther = ["Land_WaterStation_01_F"];
+
+_oldObjects = ["Vec03"];
+_newObjects = ["Land_HayBale_01_F"];
 
 _oldBuildings = _oldBuildingsVillage + _oldBuildingsReligious + _oldBuildingsMilitary + _oldBuildingsOther;
 _newBuildings = _newBuildingsVillage + _newBuildingsReligious + _newBuildingsMilitary + _newBuildingsOther;
