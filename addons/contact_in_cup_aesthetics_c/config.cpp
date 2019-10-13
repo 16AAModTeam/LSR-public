@@ -5,7 +5,7 @@
             units[] = {};
             weapons[] = {};
             requiredVersion = REQUIRED_VERSION;
-            requiredAddons[] = {"CAMisc"};
+            requiredAddons[] = {"CAMisc", "CAMisc3"};
             author = "16AA 3LSR";
             VERSION_CONFIG;
         };

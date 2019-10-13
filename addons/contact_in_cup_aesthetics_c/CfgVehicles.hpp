@@ -30,7 +30,7 @@ class CfgVehicles {
         };
     };
     class Misc_thing;
-    class Haystack_small {
+    class Haystack_small: Misc_thing {
         author = "Bohemia Interactive";
         mapSize = 1.58;
         class SimpleObject
@@ -60,7 +60,7 @@ class CfgVehicles {
         };
     };
     class House;
-    class Land_seno_balik {
+    class Land_seno_balik: House {
         author = "Bohemia Interactive";
         mapSize = 1.58;
         class SimpleObject
