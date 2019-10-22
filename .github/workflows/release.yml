@@ -11,7 +11,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: Build addon with HEMTT
-        uses: arma-actions/hemtt@master
+        uses: 16AAModTeam/hemtt@stable
         with:
           command: 'build --release'
       - run: |
