@@ -8,8 +8,8 @@ _debug = false;
 if (!isServer) exitWith {}; //get the fuck out nonservers
 
 ///////Parallel Arrays to make shit easier
-_oldBuildingsVillage = ["Land_HouseV_2I","Land_HouseV_2L","Land_HouseV2_02","Land_HouseV2_03B","Land_HouseV2_04_interier","Land_HouseV_1I1","Land_HouseV_3I3","Land_HouseV_3I4","Land_HouseV_1I2","Land_HouseV_1I3","Land_HouseV_1I4","Land_HouseV_1L1","Land_HouseV_1L2","Land_HouseV_1T","Land_HouseV_3I1","Land_HouseV_3I2","Land_houseV_2T1","Land_houseV_2T2","Land_HouseV2_01A","Land_HouseV2_01B"];
-_newBuildingsVillage = ["Land_House_1B01_F","Land_House_2B01_F","Land_House_2B02_F","Land_House_2B03_F","Land_House_2B04_F","Land_House_1W01_F","Land_House_1W10_F","Land_House_1W11_F","Land_House_1W02_F","Land_House_1W03_F","Land_House_1W04_F","Land_House_1W05_F","Land_House_1W06_F","Land_House_1W07_F","Land_House_1W08_F","Land_House_1W09_F","Land_House_2W01_F","Land_House_2W02_F","Land_House_2W03_F","Land_House_2W04_F"];
+_oldBuildingsVillage = ["Land_HouseV_2I","Land_HouseV_2L","Land_HouseV2_02","Land_HouseV2_03B","Land_HouseV2_04_interier","Land_HouseV_1I1","Land_HouseV_3I3","Land_HouseV_3I4","Land_HouseV_1I2","Land_HouseV_1I3","Land_HouseV_1I4","Land_HouseV_1L1","Land_HouseV_1L2","Land_HouseV_1T","Land_HouseV_3I1","Land_HouseV_3I2","Land_houseV_2T1","Land_houseV_2T2","Land_HouseV2_01A","Land_HouseV2_01B","Land_HouseV2_03_dam"];
+_newBuildingsVillage = ["Land_House_1B01_F","Land_House_2B01_F","Land_House_2B02_F","Land_House_2B03_F","Land_House_2B04_F","Land_House_1W01_F","Land_House_1W10_F","Land_House_1W11_F","Land_House_1W02_F","Land_House_1W03_F","Land_House_1W04_F","Land_House_1W05_F","Land_House_1W06_F","Land_House_1W07_F","Land_House_1W08_F","Land_House_1W09_F","Land_House_2W01_F","Land_House_2W02_F","Land_House_2W03_F","Land_House_2W04_F","Land_Factory_02_F"];
 
 _oldBuildingsReligious = ["Land_Church_02a", "Land_Church_02", "Land_Church_01"];
 _newBuildingsReligious = ["Land_OrthodoxChurch_02_F", "Land_OrthodoxChurch_02_F", "Land_Church_05_F"];
@@ -19,6 +19,10 @@ _newBuildingsMilitary = ["Land_GuardHouse_02_F","Land_GuardHouse_02_F"];
 
 _oldBuildingsOther = ["Land_Misc_WaterStation"];
 _newBuildingsOther = ["Land_WaterStation_01_F"];
+
+// These offsets are too extreme
+/* _oldBuildingsIndustrial = ["Land_Ind_Pec_03", "Land_Ind_Pec_03b", "Land_Ind_Pec_03a",]; */
+/* _newBuildingsIndustrial = ["Land_CementWorks_01_brick_F", "Land_CementWorks_01_grey_F","Land_CementWorks_01_brick_F",]; */
 
 _oldAesthetic = ["Vec03","Haystack_small","Land_seno_balik","Land_Barn_W_01","Land_Barn_W_02","Land_Stodola_open","Haystack"];
 
