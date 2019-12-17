@@ -20,11 +20,11 @@ _newBuildingsMilitary = ["Land_GuardHouse_02_F","Land_GuardHouse_02_F"];
 _oldBuildingsOther = ["Land_Misc_WaterStation"];
 _newBuildingsOther = ["Land_WaterStation_01_F"];
 
-_oldAesthetic = ["Vec03","Haystack_small","Land_seno_balik","Land_Barn_W_01","Land_Barn_W_02","Land_Stodola_open","Land_Barn_Metal","Haystack"];
+_oldAesthetic = ["Vec03","Haystack_small","Land_seno_balik","Land_Barn_W_01","Land_Barn_W_02","Land_Stodola_open","Haystack"];
 
 /* ,"CUP_A2_x_strawheap","CUP_A1_Stoh"]; */ // These last two replacements don't work :(
 /* ,"Land_StrawStack_01_F","Land_StrawStack_01_F"]; */
-_newAesthetic = ["Land_HayBale_01_F","Land_HayBale_01_F","Land_HayBale_01_F","Land_Barn_03_large_F","Land_Barn_03_small_F","Land_Barn_02_F","Land_Barn_04_F","Land_StrawStack_01_F"];
+_newAesthetic = ["Land_HayBale_01_F","Land_HayBale_01_F","Land_HayBale_01_F","Land_Barn_03_large_F","Land_Barn_03_small_F","Land_Barn_02_F","Land_StrawStack_01_F"];
 
 _oldBuildings = _oldBuildingsVillage + _oldBuildingsReligious + _oldBuildingsMilitary + _oldBuildingsOther;
 _newBuildings = _newBuildingsVillage + _newBuildingsReligious + _newBuildingsMilitary + _newBuildingsOther;

@@ -1,1 +1,0 @@
-#include "\z\LSR\addons\cfgworlds_replace_objects_c\script_component.hpp"
